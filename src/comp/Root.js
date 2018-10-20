@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import actions from '../store/actions/index';
 import { Link } from 'react-router-dom';
 
-export class App extends Component {
+export default class Root extends Component {
   render() {
     return (
       <div>
@@ -16,5 +16,3 @@ export class App extends Component {
     )
   }
 }
-
-export default App

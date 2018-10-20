@@ -3,7 +3,7 @@ import { Router, Route } from 'react-router'
 import { Link } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
 
-import App from '../App'
+import Root from '../Root'
 import About from '../About'
 import Inbox from '../Inbox'
 import Message from '../Message'
@@ -14,7 +14,7 @@ export default class AppRouter extends Component {
         return(
             <Router history={history}>
               <div>
-                <Route exact path="/" component={ App }/>
+                <Route exact path="/" component={ Root }/>
                 <Route path="/about" component={About} />
                 <Route path="/inbox" component={Inbox} />
                 <Route path="/messages/:id" component={Message} />
